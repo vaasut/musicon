@@ -1,0 +1,74 @@
+h1{
+	display: flex;
+	align-self: flex-start;
+	text-indent: 25%;
+	background-color: #77cc73
+}
+
+#tuner{
+	display: flex;
+	align-self: flex-start;
+	text-indent: 35%;
+	background-color: #77cc73
+}
+
+#notes{
+	margin-left: 5%
+}
+
+h4{
+	display: flex;
+	align-self: flex-start;
+	text-indent: 25%;
+	background-color: #77cc73
+}
+
+h5{
+	display: flex;
+	align-self: flex-start;
+	text-indent: 33%;
+}
+
+#play{
+	display: flex;
+	align-self: flex-start;
+	margin-left: 2%
+
+}
+
+#rhythm{
+	display: flex;
+	align-self: flex-start;
+	text-indent: 25%;
+	background-color: #77cc73
+}
+
+#metronome{
+ height:50px;
+ width:50px;
+ background-color: rgba(1,1,1,1);
+ border-radius:4px;
+ text-align:center;
+ margin-left:35%;
+}
+
+#freq{
+	display: flex;
+	align-self: flex-start;
+	margin-left:31%;
+	font-size: 120%;
+}
+
+#start{
+	display: flex;
+	align-self: flex-start;
+	margin-left:33%;
+	margin-top:5%;
+	font-size: 120%;
+}
+
+.start{
+	display: flex;
+	align-self: flex-start;
+	font-size: 120%;
+}
