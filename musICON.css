@@ -33,7 +33,12 @@ h5{
 	display: flex;
 	align-self: flex-start;
 	margin-left: 2%
+}
 
+#jam{
+	display: flex;
+	margin-left: 35%;
+	margin-top: 2%
 }
 
 #rhythm{
@@ -46,7 +51,7 @@ h5{
 #metronome{
  height:50px;
  width:50px;
- background-color: rgba(1,1,1,1);
+ background-color: rgba(0,0,0,1);
  border-radius:4px;
  text-align:center;
  margin-left:35%;
@@ -72,3 +77,46 @@ h5{
 	align-self: flex-start;
 	font-size: 120%;
 }
+
+.metronome {
+ height:100px;
+ width:50px;
+ background-color: rgba(200,80,80,1);
+ border-radius:4px;
+}
+
+#block1{
+	margin-left:10%;
+	background-color: rgba(200,80,80,1);
+}
+
+#block2{
+ background-color: rgba(100,200,200,1);
+ margin-left:130%;
+}
+
+#block3{
+ background-color: rgba(100,80,200,1);
+ margin-left:130%;
+}
+
+#block4{
+ background-color: rgba(100,200,100,1);
+ margin-left:130%;
+}
+
+#block5{
+ background-color: rgba(250,200,150,1);
+ margin-left:130%;
+}
+
+#block6{
+ background-color: rgba(200,130,200,1);
+ margin-left:130%;
+}
+
+#block7{
+ background-color: rgba(150,200,250,1);
+ margin-left:130%;
+}
+
