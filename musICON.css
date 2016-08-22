@@ -1,19 +1,24 @@
-h1{
+h1,h2 {
 	display: flex;
-	align-self: flex-start;
-	text-indent: 25%;
+	text-align: center;
+	justify-content: center;
 	background-color: #77cc73
+}
+
+#tuner_part{
+	display: flex;
+	text-align: center;
+	justify-content: center;
 }
 
 #tuner{
 	display: flex;
-	align-self: flex-start;
-	text-indent: 35%;
+	align-self: center;
 	background-color: #77cc73
 }
 
 #notes{
-	margin-left: 5%
+	margin-left: 5%;
 }
 
 h4{
@@ -25,8 +30,13 @@ h4{
 
 h5{
 	display: flex;
-	align-self: flex-start;
-	text-indent: 33%;
+	justify-content: center;
+}
+
+
+#player{
+	display: flex;
+	justify-content: center;
 }
 
 #play{
@@ -36,15 +46,16 @@ h5{
 }
 
 #jam{
-	display: flex;
-	margin-left: 35%;
 	margin-top: 2%
+}
+
+#jam_blocks{
+	display: flex;
+	justify-content: center;
 }
 
 #rhythm{
 	display: flex;
-	align-self: flex-start;
-	text-indent: 25%;
 	background-color: #77cc73
 }
 
@@ -53,28 +64,32 @@ h5{
  width:50px;
  background-color: rgba(0,0,0,1);
  border-radius:4px;
- text-align:center;
- margin-left:35%;
+}
+
+.um{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+}
+
+#bpm{ 
+ margin-top: 2%
 }
 
 #freq{
 	display: flex;
 	align-self: flex-start;
-	margin-left:31%;
 	font-size: 120%;
 }
 
 #start{
 	display: flex;
-	align-self: flex-start;
-	margin-left:33%;
 	margin-top:5%;
 	font-size: 120%;
 }
 
 .start{
 	display: flex;
-	align-self: flex-start;
 	font-size: 120%;
 }
 
@@ -86,7 +101,6 @@ h5{
 }
 
 #block1{
-	margin-left:10%;
 	background-color: rgba(200,80,80,1);
 }
 

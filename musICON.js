@@ -20,6 +20,16 @@ var osc = context.createOscillator();
 osc.frequency.value = 440;
 osc.connect(context.destination);
 
+
+
+var resize = function(){
+	console.log(window.innerWidth)
+	document.getElementById("block1").style.marginLeft =  (window.innerWidth-440)/2 + "px"
+	}
+
+window.onresize = resize
+window.onload = resize
+
 $(".notes").on("click",function(event){
 	event.preventDefault();
 	$("#freq").val($(this).attr("freq"));
@@ -34,6 +44,7 @@ $(".notes").on("click",function(event){
 	console.log()
 	})
 
+
 $("#play").on("click",function(event){
 	event.preventDefault();
 	if (note[0]===1){
@@ -43,12 +54,12 @@ $("#play").on("click",function(event){
 		osc = context.createOscillator();
 		osc.frequency.value = 440;
 		osc.connect(context.destination);
-		$("#play").text("pläy");
+		$("#play").text("play");
 		}
 
 	else{
 		note[0] = 1;
-		$("#play").text("stöp");
+		$("#play").text("stop");
 		osc.frequency.value = $("#freq").val()
 		osc.start();
 		}

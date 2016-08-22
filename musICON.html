@@ -17,39 +17,50 @@
 
 <body>
 	<h1> musïcon</h1>
-	<h2> <div id='tuner'> tüne </div> </h2>
-	<span id='notes'> 
-		<img class = 'notes' id="A" freq="220.00" src="note.png" width=5%> A3
-		<img class = 'notes' id="B" freq="246.94" src="note.png" width=5%> B3 
-		<img class = 'notes' id="C" freq="261.63" src="note.png" width=5%> C4 
-		<img class = 'notes' id="D" freq="293.66" src="note.png" width=5%> D4 
-		<img class = 'notes' id="E" freq="329.63" src="note.png" width=5%> E4 
-		<img class = 'notes' id="F" freq="349.23" src="note.png" width=5%> F4 
-		<img class = 'notes' id="G" freq="392.00" src="note.png" width=5%> G4
-		<img class = 'notes' id="A" freq="440.00" src="note.png" width=5%> A4
-		<img class = 'notes' id="B" freq="493.88" src="note.png" width=5%> B4 
-		<img class = 'notes' id="C" freq="523.25" src="note.png" width=5%> C5 
-	</span>
+	<h2> <div id='tuner'> tune </div> </h2>
+	<div id = "tuner_part">
+		<span id='notes'> 
+			<img class = 'notes' id="A" freq="220.00" src="note.png" width=5%> A3
+			<img class = 'notes' id="B" freq="246.94" src="note.png" width=5%> B3 
+			<img class = 'notes' id="C" freq="261.63" src="note.png" width=5%> C4 
+			<img class = 'notes' id="D" freq="293.66" src="note.png" width=5%> D4 
+			<img class = 'notes' id="E" freq="329.63" src="note.png" width=5%> E4 
+			<img class = 'notes' id="F" freq="349.23" src="note.png" width=5%> F4 
+			<img class = 'notes' id="G" freq="392.00" src="note.png" width=5%> G4
+			<img class = 'notes' id="A" freq="440.00" src="note.png" width=5%> A4
+			<img class = 'notes' id="B" freq="493.88" src="note.png" width=5%> B4 
+			<img class = 'notes' id="C" freq="523.25" src="note.png" width=5%> C5 
+		</span>
+	</div>
 	<!-- <h4>spëcifïc frëquency?</h4> -->
 	<h5> <a href = "http://www.phy.mtu.edu/~suits/notefreqs.html">Look up a Note</a> <h5>
-	<input id = 'freq' size='6' maxlength="7" placeholder="440 Hz"> </input> 
-	<button id='play'> pläy </button>
+	<div id="player">
+		<input id = 'freq' size='6' maxlength="7" placeholder="440 Hz"> </input> 
+		<button id='play'> play </button>
+	</div>
 	<br>
-	<h2> <div id='rhythm'>metrönome</h2>
-	<div class = "metronome" id = "metronome"></div>
-	<span id="start">
-		<input id = 'bpm' class = "start" size='6' maxlength="4" placeholder="60 bpm"></input>
-	</span>
-	<button id="jam">jäm</button>
-	<audio  <source id = 'song' src="jam.mp3" type="audio/mpeg"> > </audio>
-	<br>
-		<div class = "metronome" id = "block1">
-		<div class = "metronome" id = "block2"> 
-		<div class = "metronome" id = "block3"> 
-		<div class = "metronome" id = "block4"> 
-		<div class = "metronome" id = "block5">
-		<div class = "metronome" id = "block6"> 
-		<div class = "metronome" id = "block7"> </div> </div> </div> </div> </div> </div> </div>
+	<h2> <div id='rhythm'>metronome</h2>
+	<div class = "um">
+		<div class = "metronome" id = "metronome"></div>
+	</div>
+	<div class= "um">
+		<input id = 'bpm' size='6' maxlength="4" placeholder="60 bpm"></input>
+	</div>
+
+	<div class ="um">
+		<button id="jam">jam</button>
+	</div>
+	
+		<audio  <source id = 'song' src="jam.mp3" type="audio/mpeg"> > </audio>
+		<br>
+			<div class = "metronome" id = "block1">
+			<div class = "metronome" id = "block2"> 
+			<div class = "metronome" id = "block3"> 
+			<div class = "metronome" id = "block4"> 
+			<div class = "metronome" id = "block5">
+			<div class = "metronome" id = "block6"> 
+			<div class = "metronome" id = "block7"> </div> </div> </div> </div> </div> </div> </div>
+
 </body>
 
 	<script src="musICON.js"></script>
