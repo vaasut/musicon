@@ -14,7 +14,7 @@ var single_count = 0;
 color = ["200,80,80,","100,200,200,","100,80,200,","100,200,100,","250,200,150,","200,130,200,","150,200,250,"] 
 
 // create web audio api context
-var context = new window.webkitAudioContext();
+var context = new window.AudioContext();
 
 var osc = context.createOscillator();
 osc.frequency.value = 440;
